@@ -81,6 +81,38 @@ namespace KonsolProgramlama
                 }
             }
             Console.WriteLine("Girilen cumledeki harf sayisi: "+harf); */   
+            
+            
+            
+            /* c# ile string hazir metotlar
+            
+            string cumle="c# ile string hazir metotlari ogreniyorum.";
+            string cumle2="c# ile rgeg4g ty";
+            Console.WriteLine(cumle.Length);
+            Console.WriteLine(cumle.ToUpper());
+            Console.WriteLine(cumle.ToLower());   
+            Console.WriteLine(String.Concat(cumle,"merhaba"));
+            Console.WriteLine(cumle.CompareTo(cumle2));
+            Console.WriteLine(String.Compare(cumle,cumle2,true));
+            Console.WriteLine(String.Compare(cumle,cumle2,false));
+            Console.WriteLine(cumle.Contains(cumle2));
+            Console.WriteLine(cumle.EndsWith("."));
+            Console.WriteLine(cumle.StartsWith("c#"));
+            Console.WriteLine(cumle.IndexOf("ile"));
+            Console.WriteLine(cumle.Insert(0,"merhaba!"));
+            Console.WriteLine(cumle.LastIndexOf("i"));
+            Console.WriteLine(cumle2+ cumle.PadLeft(48));
+            Console.WriteLine(cumle2+ cumle.PadRight(48,'*'));
+            Console.WriteLine(cumle.Remove(10));
+            Console.WriteLine(cumle.Remove(0,2));
+            Console.WriteLine(cumle.Replace(' ','*'));
+            Console.WriteLine(cumle);
+            Console.WriteLine(cumle.Split(' ')[1]);
+            Console.WriteLine(cumle.Substring(4));
+            Console.WriteLine(cumle.Substring(0,17));
+            
+            
+            */
         }
     }
 }
