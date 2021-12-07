@@ -1,0 +1,71 @@
+using System;
+
+namespace KonsolProgramlama
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+           Console.WriteLine(DateTime.Now); //7.12.2021 23:59:27
+           Console.WriteLine(DateTime.Now.Date); //7.12.2021 00:00:00
+           Console.WriteLine(DateTime.Now.Month); //12 
+           Console.WriteLine(DateTime.Now.Year); //2021 
+           Console.WriteLine(DateTime.Now.Day); //7
+           Console.WriteLine(DateTime.Now.Hour); //23
+           Console.WriteLine(DateTime.Now.Minute); //59
+           Console.WriteLine(DateTime.Now.Second); //27
+
+           Console.WriteLine(DateTime.Now.DayOfWeek); //tuesday
+           Console.WriteLine(DateTime.Now.DayOfYear); //341
+
+           Console.WriteLine(DateTime.Now.ToLongDateString()); //7 Aralık 2021
+           Console.WriteLine(DateTime.Now.ToShortDateString()); //7.12.2021
+           Console.WriteLine(DateTime.Now.ToLongTimeString()); //23:59:27
+           Console.WriteLine(DateTime.Now.ToShortTimeString());  //23:59
+
+           Console.WriteLine(DateTime.Now.AddDays(3)); //11.12.2021 00:03:55
+           Console.WriteLine(DateTime.Now.AddHours(3)); //8.12.2021 03:03:55
+           Console.WriteLine(DateTime.Now.AddSeconds(4)); //8.12.2021 00:03:59
+           Console.WriteLine(DateTime.Now.AddMonths(2)); //8.02.2022 00:03:55
+           Console.WriteLine(DateTime.Now.AddMinutes(6)); //8.12.2021 00:09:55
+           Console.WriteLine(DateTime.Now.AddYears(3)); //8.12.2024 00:03:55
+           
+           //DateTime Format
+            Console.WriteLine(DateTime.Now.ToString("dd")); //08
+            Console.WriteLine(DateTime.Now.ToString("ddd")); //Çar
+            Console.WriteLine(DateTime.Now.ToString("dddd")); //Çarşamba
+
+             Console.WriteLine(DateTime.Now.ToString("MM")); //12
+            Console.WriteLine(DateTime.Now.ToString("MMM")); //Ara
+            Console.WriteLine(DateTime.Now.ToString("MMMM")); //Aralık
+
+             Console.WriteLine(DateTime.Now.ToString("yy")); //21
+            Console.WriteLine(DateTime.Now.ToString("yyyy")); //2021
+
+            //Math Kutuphanesi
+            Console.WriteLine(Math.Abs(-12)); //12 mutlak deger
+            Console.WriteLine(Math.Sin(90)); //
+            Console.WriteLine(Math.Cos(90)); //
+            Console.WriteLine(Math.Tan(45)); //
+
+            Console.WriteLine(Math.Ceiling(22.3)); //23 bir üst sayıya yuvarlar
+            Console.WriteLine(Math.Round(22.3)); //22
+            Console.WriteLine(Math.Round(22.7)); //23
+            Console.WriteLine(Math.Floor(22.7)); //22 bir alt sayıya yuvarlar
+
+            Console.WriteLine(Math.Max(2,6)); //iki degerden max olanı verir
+            Console.WriteLine(Math.Min(22,6)); //iki degerden min olanı verir
+
+            Console.WriteLine(Math.Pow(2,3)); //2nin 3. kuvvetini verir
+            Console.WriteLine(Math.Sqrt(16)); // 16nnin karekokunu verir
+            Console.WriteLine(Math.Log(9)); // logaritma9
+            Console.WriteLine(Math.Exp(3)); // e uzeri 3 
+            Console.WriteLine(Math.Log10(100)); //
+           
+           
+        }
+    }    
+    
+}    
+    
