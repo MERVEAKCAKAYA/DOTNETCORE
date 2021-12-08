@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+namespace KonsolProgramlama
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+          
+          ArrayList liste = new ArrayList();
+            liste.Add("merve");
+            liste.Add(23);
+            liste.Add(true);
+            Console.WriteLine(liste[1]);
+            
+            //AddRange birden cok elemanı eklemeyi basarir
+            string[] renkler={"mavi","siyah","beyaz"};
+            List<int> sayilar=new List<int>(){23,1998};
+            liste.AddRange(renkler);
+            liste.AddRange(sayilar);
+            
+            //Sorting liste sayilardan olusmali yoksa hata verir.
+            //liste.Sort();
+
+            foreach (var item in liste)
+            {
+                 Console.WriteLine(item);
+            }
+
+
+            //reverse
+             liste.Reverse();
+             foreach (var item in liste)
+            {
+                 Console.WriteLine(item);
+            }
+
+
+             //clear
+
+             liste.Clear();
+             Console.WriteLine(liste);
+
+
+        
+        }
+        
+   }
+   
+}   
